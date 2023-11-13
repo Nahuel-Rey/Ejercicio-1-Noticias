@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-NoticiasApplication<noticias>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.noticias.noticias.NoticiasApplication",
+            "projectName": "noticias",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

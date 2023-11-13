@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Formulari de carga</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Cargar Noticia</h1>
+        <!-- Formulario para crear una noticia -->
+        <form th:action="@{/noticia/registro}" method="post">
+            <div class="form-group">
+                <label for="titulo">Título</label>
+                <input type="text" id="titulo" name="titulo" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="cuerpo">Cuerpo</label>
+                <textarea id="cuerpo" name="cuerpo" class="form-control" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Crear Noticia</button>
+        </form>
+    </div>
+</body>
+</html>
+
